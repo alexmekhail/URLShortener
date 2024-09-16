@@ -1,0 +1,14 @@
+@urlshortener_HostAddress = http://localhost:5167
+GET {{urlshortener_HostAddress}}/shortUrls/urlId4
+Accept: application/json
+Authorization: Basic olivia.green@example.com:passwordabc
+###
+
+PUT {{urlshortener_HostAddress}}/shortUrls/urlId4
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic olivia.green@example.com:passwordabc
+
+{
+    "url": "https://www.cnn.com/2024/09/14/americas/venezuela-arrests-americans-seizes-rifles-intl-latam/index.html"
+}
